@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "fad488c6-482e-4008-9c7c-95de0e155329",
+		"name": "Solution 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Paindrome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/getAllWords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getAllWords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Palindrome",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value\" : \"abcd, @adddda and 1advfvda\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/addLongestPalindrome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"addLongestPalindrome"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
